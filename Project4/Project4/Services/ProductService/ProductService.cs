@@ -1,5 +1,4 @@
 ﻿using Project4.Models;
-using Project4.Repositories.CategoryRepository;
 using Project4.Repositories.ProductRepository;
 
 namespace Project4.Services.ProductService

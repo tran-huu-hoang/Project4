@@ -39,9 +39,9 @@ namespace Project4.Repositories.ProductRepository
         }
         public async Task<List<Product>> DeleteProduct(int id)
         {
-            var category = await _context.Products.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
 
-            _context.Products.Remove(category);
+            _context.Products.Remove(product);
             await _context.SaveChangesAsync();
 
             return await _context.Products.ToListAsync();
