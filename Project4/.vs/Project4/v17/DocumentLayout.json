@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\Project4\\Project4\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{717A7F10-BF96-4EEC-A594-917D9F509FDA}|Project4\\Project4.csproj|d:\\project4\\project4\\project4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{717A7F10-BF96-4EEC-A594-917D9F509FDA}|Project4\\Project4.csproj|d:\\project4\\project4\\project4\\models\\mockproject4dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{717A7F10-BF96-4EEC-A594-917D9F509FDA}|Project4\\Project4.csproj|solutionrelative:project4\\models\\mockproject4dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{717A7F10-BF96-4EEC-A594-917D9F509FDA}|Project4\\Project4.csproj|D:\\Project4\\Project4\\project4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{717A7F10-BF96-4EEC-A594-917D9F509FDA}|Project4\\Project4.csproj|solutionrelative:project4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -47,6 +51,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MockProject4DbContext.cs",
+              "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Models\\MockProject4DbContext.cs",
+              "RelativeDocumentMoniker": "Project4\\Models\\MockProject4DbContext.cs",
+              "ToolTip": "D:\\Project4\\Project4\\Project4\\Models\\MockProject4DbContext.cs",
+              "RelativeToolTip": "Project4\\Models\\MockProject4DbContext.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-02T01:22:15.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Program.cs",
               "RelativeDocumentMoniker": "Project4\\Program.cs",
@@ -54,12 +71,11 @@
               "RelativeToolTip": "Project4\\Program.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAcwCEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T01:30:13.072Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-27T01:30:13.072Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RegisterViewModel.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\ViewModels\\RegisterViewModel.cs",
               "RelativeDocumentMoniker": "Project4\\ViewModels\\RegisterViewModel.cs",
@@ -71,7 +87,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Project4\\Controllers\\UserController.cs",
@@ -83,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "UserService.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Services\\UserService\\UserService.cs",
               "RelativeDocumentMoniker": "Project4\\Services\\UserService\\UserService.cs",
@@ -95,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "IUserService.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Services\\UserService\\IUserService.cs",
               "RelativeDocumentMoniker": "Project4\\Services\\UserService\\IUserService.cs",
@@ -107,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Repositories\\UserRepository\\UserRepository.cs",
               "RelativeDocumentMoniker": "Project4\\Repositories\\UserRepository\\UserRepository.cs",
@@ -119,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "IUserRepository.cs",
               "DocumentMoniker": "D:\\Project4\\Project4\\Project4\\Repositories\\UserRepository\\IUserRepository.cs",
               "RelativeDocumentMoniker": "Project4\\Repositories\\UserRepository\\IUserRepository.cs",
