@@ -8,6 +8,10 @@ using Project4.Repositories.ProductRepository;
 using Project4.Services.ProductService;
 using Project4.Repositories.UserRepository;
 using Project4.Services.UserService;
+using Project4.Repositories.RateRepository;
+using Project4.Services.RateService;
+using Project4.Repositories.FavouriteProductRepository;
+using Project4.Services.FavouriteProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,7 +34,10 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-
+builder.Services.AddScoped<IRateRepository, RateRepository>();
+builder.Services.AddScoped<IRateService, RateService>();
+builder.Services.AddScoped<IFavouriteProductRepository, FavouriteProductRepository>();
+builder.Services.AddScoped<IFavouriteProductService, FavouriteProductService>();
 
 builder.Services.AddCors(options =>
 {
