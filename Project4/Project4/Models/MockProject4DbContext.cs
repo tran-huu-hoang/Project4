@@ -33,7 +33,7 @@ public partial class MockProject4DbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Data Source=ADMIN; Database=Mock_Project4_db; uid=sa; pwd=sa123; MultipleActiveResultSets=True;TrustServercertificate=true;");
+        => optionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS; Database=Mock_Project4_db; uid=sa; pwd=hoang1407; MultipleActiveResultSets=True;TrustServercertificate=true;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -128,13 +128,16 @@ public partial class MockProject4DbContext : DbContext
 
             entity.Property(e => e.AvatarUrl).HasColumnName("Avatar_Url");
             entity.Property(e => e.CreateDate)
+                .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("Create_Date");
             entity.Property(e => e.Email).HasMaxLength(150);
             entity.Property(e => e.FullName)
                 .HasMaxLength(250)
                 .HasColumnName("Full_Name");
-            entity.Property(e => e.IsDelete).HasColumnName("Is_Delete");
+            entity.Property(e => e.IsDelete)
+                .HasDefaultValueSql("((0))")
+                .HasColumnName("Is_Delete");
             entity.Property(e => e.Password).IsUnicode(false);
             entity.Property(e => e.RoleId).HasColumnName("Role_id");
             entity.Property(e => e.UserPhone)

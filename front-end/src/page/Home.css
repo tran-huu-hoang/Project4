@@ -1,0 +1,11 @@
+
+        /* Fix for custom scrollbar if JS is disabled */
+
+
+
+            /*Reinstate scrolling for non-JS clients */
+
+
+        .simplebar-content-wrapper {
+            overflow: auto;
+        }

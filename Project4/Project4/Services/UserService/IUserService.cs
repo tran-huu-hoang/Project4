@@ -6,5 +6,6 @@ namespace Project4.Services.UserService
     public interface IUserService
     {
         Task<User?> Register(RegisterViewModel registerViewModel);
+        Task<string> Login(LoginViewModel loginViewModel);
     }
 }

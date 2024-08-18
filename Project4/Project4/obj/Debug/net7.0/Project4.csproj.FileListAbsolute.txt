@@ -509,3 +509,6 @@ E:\study\Project4\Project4\Project4\Project4\obj\Debug\net7.0\Project4.genruntim
 E:\study\Project4\Project4\Project4\Project4\obj\Debug\net7.0\ref\Project4.dll
 E:\study\Project4\Project4\Project4\Project4\obj\Debug\net7.0\Project4.RazorAssemblyInfo.cache
 E:\study\Project4\Project4\Project4\Project4\obj\Debug\net7.0\Project4.RazorAssemblyInfo.cs
+D:\Project4\Project4\Project4\obj\Debug\net7.0\Project4.RazorAssemblyInfo.cache
+D:\Project4\Project4\Project4\obj\Debug\net7.0\Project4.RazorAssemblyInfo.cs
+D:\Project4\Project4\Project4\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

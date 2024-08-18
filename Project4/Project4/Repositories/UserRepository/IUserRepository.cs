@@ -8,5 +8,6 @@ namespace Project4.Repositories.UserRepository
         Task<User?> GetById(int id);
         Task<User?> GetByEmail(string email);
         Task<User?> Create(RegisterViewModel registerViewModel);
+        Task<string> Login(LoginViewModel loginViewModel);
     }
 }

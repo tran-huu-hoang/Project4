@@ -18,13 +18,27 @@ namespace Project4.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        [HttpPost("register")]
         public async Task<ActionResult> Register(RegisterViewModel registerViewModel)
         {
             try
             {
                 var user = await _userService.Register(registerViewModel);
                 return Ok(user);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPost("login")]
+        public async Task<ActionResult> Login(LoginViewModel loginViewModel)
+        {
+            try
+            {
+                string jwtToken = await _userService.Login(loginViewModel);
+                return Ok(new{ jwtToken });
             }
             catch (ArgumentException ex)
             {

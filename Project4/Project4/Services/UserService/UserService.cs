@@ -12,6 +12,7 @@ namespace Project4.Services.UserService
         {
             _userRepository = userRepository;
         }
+
         public async Task<User?> Register(RegisterViewModel registerViewModel)
         {
             var existingUserByEmail = await _userRepository.GetByEmail(registerViewModel.Email ?? "");
@@ -20,7 +21,14 @@ namespace Project4.Services.UserService
                 throw new ArgumentException("Email đã tồn tại");
             }
 
+            //thực hiện thêm mới user
             return await _userRepository.Create(registerViewModel);
+        }
+
+        public async Task<string> Login(LoginViewModel loginViewModel)
+        {
+            //thực hiện đăng nhập
+            return await _userRepository.Login(loginViewModel);
         }
     }
 }

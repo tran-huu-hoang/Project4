@@ -25,6 +25,8 @@ public partial class Product
 
     public double? SalePrice { get; set; }
 
+    public double? Rate { get; set; }
+
     public virtual Category? CidNavigation { get; set; }
 
     public virtual ICollection<FavouriteProduct> FavouriteProducts { get; set; } = new List<FavouriteProduct>();

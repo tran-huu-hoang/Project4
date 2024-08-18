@@ -9,13 +9,15 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project4
 build_property.RootNamespace = Project4
-build_property.ProjectDir = E:\study\Project4\Project4\Project4\Project4\
+build_property.ProjectDir = d:\Project4\Project4\Project4\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\study\Project4\Project4\Project4\Project4
+build_property.MSBuildProjectDirectory = d:\Project4\Project4\Project4
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/study/Project4/Project4/Project4/Project4/Views/Shared/_ValidationScriptsPartial.cshtml]
+[d:/Project4/Project4/Project4/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 

@@ -12,6 +12,15 @@ using Project4.Repositories.RateRepository;
 using Project4.Services.RateService;
 using Project4.Repositories.FavouriteProductRepository;
 using Project4.Services.FavouriteProductService;
+using Project4.Repositories.UsersRepository;
+using Project4.Services.UsersService;
+using Project4.Repositories.OrderRepository;
+using Project4.Services.OrderService;
+using Project4.Repositories.OrderDetailRepository;
+using Project4.Services.OrderDetailService;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +35,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
@@ -38,6 +48,31 @@ builder.Services.AddScoped<IRateRepository, RateRepository>();
 builder.Services.AddScoped<IRateService, RateService>();
 builder.Services.AddScoped<IFavouriteProductRepository, FavouriteProductRepository>();
 builder.Services.AddScoped<IFavouriteProductService, FavouriteProductService>();
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IUsersService, UsersService>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
+builder.Services.AddScoped<IOrderDetailService, OrderDetailService>();
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+});
+/*.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = "",
+        ValidAudience = "",
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(""))
+    };
+});*/
 
 builder.Services.AddCors(options =>
 {
@@ -64,6 +99,8 @@ app.UseHttpsRedirection();
 app.UseCors("AllowAllOrigins");
 
 app.UseAuthorization();
+
+app.UseAuthentication();
 
 app.MapControllers();
 
